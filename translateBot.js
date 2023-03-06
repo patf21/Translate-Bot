@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const { Client, Intents, Collection, GatewayIntentBits} = require('discord.js');
 const {Translate} = require('@google-cloud/translate').v2;
 const { SlashCommandBuilder } = require('@discordjs/builders');
-
-const translate = new Translate({key:'AIzaSyCat-2FGUfX_2c795jJY9MUwuyRd4OadGs'});
+// comment
+const translate = new Translate({key:'KEY_HERE'});
 //translate-bot-375323-274e3f244c7d.json
 const client = new Discord.Client({
     intents: [
@@ -16,7 +16,7 @@ const client = new Discord.Client({
 let prefix = "!";
 let user_languages = new Map();
 let flashcard_words = new Map(); // to store the word and its translation for the current flashcard
-client.login('MTA2OTM2NDQxMTcyNDIwNjE5MA.G0up-C.jkKLY3PO-jx_UeNrw-vdXiLqAV1spmflakcjqQ');
+client.login('key_here');
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
